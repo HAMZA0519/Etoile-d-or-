@@ -1,79 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BEN KHELIFA HAMZA - Carte NFC</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: sans-serif;
       background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
+      margin: 0;
     }
     .card {
       background: white;
-      border-radius: 20px;
+      border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-      width: 100%;
+      padding: 24px;
+      width: 90%;
       max-width: 400px;
       text-align: center;
     }
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
+    .card h1 {
       color: #d4af37;
-      margin-bottom: 10px;
+      margin-bottom: 0.5em;
     }
-    .name {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 10px 0;
+    .card h2 {
+      margin: 0.3em 0;
+      font-size: 1.2em;
     }
-    .title {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 20px;
+    .card p {
+      margin: 0.3em 0;
+      color: #333;
     }
-    .info {
-      font-size: 15px;
-      margin: 6px 0;
-    }
-    a.button {
+    .buttons a {
       display: block;
       background-color: #d4af37;
       color: white;
+      text-decoration: none;
       padding: 12px;
       margin: 10px auto;
       width: 80%;
-      text-decoration: none;
       border-radius: 10px;
       transition: background 0.3s;
     }
-    a.button:hover {
-      background-color: #b8932c;
+    .buttons a:hover {
+      background-color: #b9932a;
+    }
+    .qr-code {
+      margin-top: 20px;
+    }
+    .qr-code img {
+      width: 120px;
+      height: 120px;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="logo">⭐ Etoile d'Or</div>
-    <div class="name">BEN KHELIFA HAMZA</div>
-    <div class="title">VENTE ACCESSOIRES ET PRODUITS DETAIRGENT AUTOS.</div>
-    <div class="info">📧 hamzaalge19@gmail.com</div>
-    <div class="info">📍 5M3F+QWF El Eulma</div>
+    <h1>⭐ Etoile d'Or</h1>
+    <h2>BEN KHELIFA HAMZA</h2>
+    <p>VENTE ACCESSOIRES ET PRODUITS DETAIRGENT AUTOS.</p>
+    <p>📧 hamzaalge19@gmail.com</p>
+    <p>📍 5M3F+QWF El Eulma</p>
 
-    <a class="button" href="tel:+213551331722">📞 اتصال مباشر</a>
-    <a class="button" href="mailto:hamzaalge19@gmail.com">✉️ إرسال بريد إلكتروني</a>
-    <a class="button" href="https://wa.me/213551331722" target="_blank">💬 تواصل عبر واتساب</a>
-    <a class="button" href="https://profwell-eleulma.dzair.pro/" target="_blank">🌐 زيارة الموقع</a>
-    <a class="button" href="https://www.facebook.com/share/1CpxXFQRuM/" target="_blank">📘 صفحة الفيسبوك</a>
+    <div class="buttons">
+      <a href="https://wa.me/213551331722" target="_blank">💬 Contact via WhatsApp</a>
+      <a href="https://profwell-eleulma.dzair.pro/" target="_blank">🌐 Visiter notre site web</a>
+      <a href="https://www.facebook.com/share/1CpxXFQRuM/" target="_blank">📘 Page Facebook</a>
+      <a href="mailto:hamzaalge19@gmail.com" target="_blank">✉️ Envoyer un email</a>
+      <a href="tel:+213551331722" target="_blank">📞 Appeler maintenant</a>
+      <a href="https://www.google.com/maps?q=5M3F%2BQWF+El+Eulma" target="_blank">🗺️ Voir la localisation sur la carte</a>
+    </div>
+
+    <div class="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://profwell-eleulma.dzair.pro/&size=120x120" alt="QR Code">
+    </div>
   </div>
+</body>
+</html>
+<!-- partial -->
+  
 </body>
 </html>
